@@ -12,8 +12,8 @@ branches:
   - /.*/
 
 install:
-  - npm install
-  - npm generate
+  - yarn install
+  - yarn generate
 
 script:
   - echo "Skipping tests"
