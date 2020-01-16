@@ -9,6 +9,7 @@ cache:
 branches:
   only:
   - gh-pages // 対象ブランチ
+  - /.*/
 
 install:
   - npm install
