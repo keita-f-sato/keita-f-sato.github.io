@@ -57,7 +57,6 @@
   </v-content>
 </template>
 
-
 <script>
 export default{
     data () {
