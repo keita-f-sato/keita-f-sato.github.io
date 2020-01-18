@@ -44,10 +44,9 @@
                     連絡先です。
                 </v-card-text>
               </v-card-title>
-              <v-card-text class="lan">
+              <!-- <v-card-text class="lan">
                 <a href="/index_en">JP/EN</a>
-              </v-card-text>
-              <v-divider />
+              </v-card-text> -->
             </v-card>
         </v-flex> 
       </v-layout>
@@ -94,7 +93,7 @@ export default {
   color: rgb(255, 255, 255);
   font-size: 7vmin;
   position: relative;
-  top: 30%;
+  top: 33%;
   width: 100%;
   margin: 0;
 }

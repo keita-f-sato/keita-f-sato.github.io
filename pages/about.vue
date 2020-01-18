@@ -1,31 +1,15 @@
 <template>
   <v-content>
-    <v-navigation-drawer app right overlay-opacity="0" v-model="drawer" width=128 color=#fff>
-        <v-list rounded class="menulist">
-            <v-list-item v-for="item in items" :key="item.title" :to="item.link" link>
-                <v-list-item-content>
-                    <v-list-item-title class="menu">{{ item.title }}</v-list-item-title>
-                </v-list-item-content>
-            </v-list-item>
-        </v-list>
-        <div class="scroll loading">
-            <span>S</span>
-            <span>C</span>
-            <span>R</span>
-            <span>O</span>
-            <span>L</span>
-            <span>L</span>
-        </div>
-    </v-navigation-drawer>
+    <Menu />
     <v-container fluid pa-0 fill-height ma-0>
           <v-layout>
               <v-flex xs12 s12 md12 lg12 order-lg1 order-sm1>
                   <v-card tile flat class="who">
-                      <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-                      <v-card-title class="justify-center who-title">
+                      <v-card-title
+                        v-bind:class="[$vuetify.breakpoint.smAndDown === true ? 'justify-center who-title sm' : 'justify-center who-title']">
                           Who I am?
                       </v-card-title>
-                      <div class="bartitle" />
+                      <div v-bind:class="[$vuetify.breakpoint.smAndDown === true ? 'bartitle sm' : 'bartitle']" />
                   </v-card>
               </v-flex>
           </v-layout>
@@ -34,21 +18,24 @@
         <v-layout>
             <v-flex xs12 s12 md12 lg12 order-lg1 order-sm1>
                 <v-card tile flat class="who">
-                    <v-card-title class="justify-center about-title">
+                    <v-card-title v-bind:class="[$vuetify.breakpoint.xs === true ? 'justify-center about-title sm' : 'justify-center about-title']">
                         About
+                    <v-card-text v-bind:class="[$vuetify.breakpoint.xs === true ? 'intoroduction-title sm' : 'intoroduction-title']">
+                      自己紹介
+                    </v-card-text>
                     </v-card-title>
-                    <v-card-text class="intoroduction-title">自己紹介</v-card-text>
-                    <img src="/face.png" alt="face picture" class="face">
-                    <v-card-text class="intro-self">
+                    <img src="/face.png" alt="face picture" v-bind:class="[$vuetify.breakpoint.xs === true ? 'face sm' : 'face']">
+                    <v-card-text v-bind:class="[$vuetify.breakpoint.xs === true ? 'intro-self sm' : 'intro-self']">
                         名前：佐藤恵太<br>
                         出身：山形<br>
                         学歴：帝京大学 理工学部 航空宇宙工学科<br>
-                        好きなもの：飛行機・バレー🏐<br><br>
+                        好きなもの：飛行機・バレー🏐・ラグビー<br><br>
                         その他：<br>
                         はじめまして！佐藤恵太と申します。<br>
                         バイオ/複合材料研究者・ドローンエンジニア・機械学習エンジニア<br>
                         を経て、現在はフリーでお仕事しています。<br>
-                        今年の夏からオーストラリア🇦🇺に留学予定です。<br>
+                        趣味はバレーで、友達とバレーサークル作るぐらいには好きです。<br>
+                        なお、プレーは上手くないので猛練習中・・・
                     </v-card-text>
                 </v-card>
             </v-flex>
@@ -58,30 +45,25 @@
 </template>
 
 <script>
+import Menu from '~/components/menu.vue'
+
 export default{
+    components: {
+      Menu
+    },
     data () {
         return {
-            drawer: false,
-            items : [
-                { title: 'Top', link: '/' },
-                { title: 'About', link: '/about' },
-                { title: 'Work', link: '/work' },
-                { title: 'Skill', link: '/skill' },
-                { title: 'Contact', link: '/contact' },
-            ]
         }
     },
-    watch: {
-      group () {
-        this.drawer = false
-      }
-    }
 }
 </script>
+
 
 <style>
 @import url('https://fonts.googleapis.com/css?family=Tangerine&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Kosugi&display=swap');
+@import url('assets/move-bar.scss');
+
 .who {
   position: relative;
   background-color: #fff !important;
@@ -97,6 +79,10 @@ export default{
   width: 100%;
 }
 
+.who-title.sm {
+  font-size: 45pt !important;
+}
+
 .about-title {
   position: absolute;
   color: #929292 !important;
@@ -106,26 +92,25 @@ export default{
   width: 100%;
 }
 
-.menu {
-    color: #929292 !important;
-}
-
-.menulist {
-    position: absolute;
-    top: 33% ;
-}
-
-.v-navigation-drawer__border {
-  background-color: #fff!important;
+.about-title.sm {
+  font-size: 45pt !important;
 }
 
 .intoroduction-title {
   position: absolute;
   color: #929292 !important;
   font-size: 15pt !important;
-  top: 20% !important;
+  top: 70% !important;
   width: 100%;
-  left: 45%;
+  left: 43%;
+  border-bottom: solid 1px ;
+  border-image: url("/gradient.png") 1 stretch;
+  border-image-slice: 1;
+}
+
+.intoroduction-title.sm {
+  font-size: 13pt !important;
+  left: 37%;
 }
 
 .intro-self {
@@ -140,26 +125,20 @@ export default{
   left: 35%;  
 }
 
-.scroll {
-  color: #929292 !important;
-  font-size: 15pt !important;
-  position: absolute;
-  top: 92%;
-  left: 18%;
+.intro-self.sm {
+  font-size: 7pt !important;
+  top: 43% !important;
+  left: 10%;  
 }
 
 .bartitle {
-  border-bottom: solid 1px ;
-  border-image: url("/gradient.png") 1 stretch;
-  border-image-slice: 1;
-  top: 43%;
+  top: 43% ;
   position: absolute;
-  width: 100%;
-  right: 35%;
-  opacity:0;
-  animation-name:sample02;
-  animation-duration:3s; 
-  animation-fill-mode: forwards;
+  width: 62%;
+}
+
+.bartitle.sm {
+  width: 80%;
 }
 
 .face {
@@ -169,46 +148,9 @@ export default{
   width: 20%;
 }
 
-@keyframes sample02 {
-0% {
- opacity: 1;
- transform: translateX(-1000px);
-}
- 100% {
- opacity:1;
- transform: translateX(0px);
- } 
-}
-
-.loading span {
-  display: inline-block;
-  margin: 0 -.075em;
-  animation: loading 1.2s infinite alternate;
-}
-.loading span:nth-child(2) {
-  animation-delay: .1s;
-}
-.loading span:nth-child(3) {
-  animation-delay: .2s;
-}
-.loading span:nth-child(4) {
-  animation-delay: .3s;
-}
-.loading span:nth-child(5) {
-  animation-delay: .4s;
-}
-.loading span:nth-child(6) {
-  animation-delay: .5s;
-}
-.loading span:nth-child(7) {
-  animation-delay: .6s;
-}
-@keyframes loading {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(0.8);
-  }
+.face.sm {
+  top: 27%;
+  left: 37%;
+  width: 34%;
 }
 </style>

@@ -1,0 +1,31 @@
+.bartitle {
+    border-bottom: solid 1px ;
+    border-image: url("/gradient.png") 1 stretch;
+    border-image-slice: 1;
+    opacity:0;
+    animation-name:sample02;
+    animation-duration:3s; 
+    animation-fill-mode: forwards;
+  }
+  
+  .bartitle-sm {
+    border-bottom: solid 1px ;
+    border-image: url("/gradient.png") 1 stretch;
+    border-image-slice: 1;
+    opacity:0;
+    animation-name:sample02;
+    animation-duration:3s; 
+    animation-fill-mode: forwards;
+  }
+
+
+@keyframes sample02 {
+    0% {
+     opacity: 1;
+     transform: translateX(-1000px);
+    }
+     100% {
+     opacity:1;
+     transform: translateX(0px);
+     } 
+    }

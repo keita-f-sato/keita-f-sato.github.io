@@ -30,6 +30,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    'plugins/vuetify'
   ],
   /*
   ** Nuxt.js dev-modules
@@ -48,6 +49,7 @@ export default {
   ** https://github.com/nuxt-community/vuetify-module
   */
   vuetify: {
+    defaultAssets: {icons: 'fa'},
     customVariables: ['~/assets/variables.scss'],
     theme: {
       dark: false,
