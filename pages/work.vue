@@ -157,7 +157,7 @@ export default{
 
 .aerospace-card {
   background-color: #fff !important;
-  height: 15%;
+  height: 25%;
 }
 
 .aerospace-title {
@@ -180,7 +180,7 @@ export default{
   font-family: 'Kosugi', sans-serif;
   font-size: 11pt !important;
   top: 9% !important;
-  width: 100%;
+  width: 43%;
   left: 70%;   
 }
 
@@ -226,7 +226,7 @@ export default{
   border-bottom: solid 1px ;
   border-image: url("/gradient.png") 1 stretch;
   border-image-slice: 1;
-  top: 50%;
+  top: 30%;
   position: absolute;
   width: 85%;
 }

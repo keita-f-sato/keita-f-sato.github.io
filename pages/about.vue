@@ -29,8 +29,7 @@
                         名前：佐藤恵太<br>
                         出身：山形<br>
                         学歴：帝京大学 理工学部 航空宇宙工学科<br>
-                        好きなもの：飛行機・バレー🏐・ラグビー<br><br>
-                        その他：<br>
+                        好きなもの：飛行機・バレー・ラグビー<br><br>
                         はじめまして！佐藤恵太と申します。<br>
                         バイオ/複合材料研究者・ドローンエンジニア・機械学習エンジニア<br>
                         を経て、現在はフリーでお仕事しています。<br>
@@ -89,7 +88,8 @@ export default{
   font-family: 'Tangerine', cursive !important;
   font-size: 60pt !important;
   top: 10% !important;
-  width: 100%;
+  width: 55%;
+  left: 24%;
 }
 
 .about-title.sm {
