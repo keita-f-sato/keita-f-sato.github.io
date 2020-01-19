@@ -58,11 +58,11 @@ export default{
 }
 
 .menulist {
-    position: absolute;
+    position: absolute !important;
     top: 33% ;
 }
 
 .v-navigation-drawer__border {
-  background-color: #fff!important;
+  background-color: #fff !important;
 }
 </style>
