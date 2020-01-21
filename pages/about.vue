@@ -18,21 +18,23 @@
         <v-layout>
             <v-flex xs12 s12 md12 lg12 order-lg1 order-sm1>
                 <v-card tile flat class="who" align-center >
-                    <v-card-title v-bind:class="[$vuetify.breakpoint.xs === true ? 'justify-center about-title sm' : 'justify-center about-title']">
+                    <div v-bind:class="[$vuetify.breakpoint.xs === true ? 'justify-center about-title sm' : 'justify-center about-title']">
                         About
-                    </v-card-title>
-                    <img src="/face.png" alt="face picture" v-bind:class="[$vuetify.breakpoint.xs === true ? 'face sm' : 'face']">
-                    <v-card-text v-bind:class="[$vuetify.breakpoint.xs === true ? 'intro-self sm' : 'intro-self']">
+                    </div>
+                    <div v-bind:class="[$vuetify.breakpoint.xs === true ? 'intro-self sm' : 'intro-self']">
+                        <img src="/face.png" alt="face picture" v-bind:class="[$vuetify.breakpoint.xs === true ? 'face sm' : 'face']">
                         名前：佐藤恵太<br>
                         出身：山形<br>
                         学歴：帝京大学 理工学部 航空宇宙工学科<br>
                         好きなもの：飛行機・バレー・ラグビー<br><br>
                         はじめまして！佐藤恵太と申します。<br>
-                        バイオ/複合材料研究者・ドローンエンジニア・機械学習エンジニア<br>
-                        を経て、現在はフリーでお仕事しています。<br>
+                        バイオ/複合材料研究者<br>
+                        ドローンエンジニア<br>
+                        機械学習エンジニアを経て、<br>
+                        現在はフリーでお仕事しています。<br><br>
                         趣味はバレーで、友達とバレーサークル作るぐらいには好きです。<br>
                         なお、プレーは上手くないので猛練習中・・・
-                    </v-card-text>
+                    </div>
                 </v-card>
             </v-flex>
         </v-layout>
@@ -80,13 +82,14 @@ export default{
 }
 
 .about-title {
-  position: absolute;
+  position: relative;
   color: #929292 !important;
   font-family: 'Tangerine', cursive !important;
   font-size: 60pt !important;
   top: 10% !important;
+  text-align:center;
   width: 150pt;
-  left: 40%;
+  margin: auto;
   border-bottom: solid 1px ;
   border-left: solid 0px ;
   border-right: solid 0px ;
@@ -103,19 +106,20 @@ export default{
 .intro-self {
   font-family: 'Kosugi', sans-serif;
   font-weight: 100;
-  position: absolute;
+  position: relative;
   color: #5d5d5d !important;
   font-size: 1.5vw !important;
   line-height: 150%;
-  top: 32% !important;
-  width: 80%;
-  left: 35%;  
+  text-align:center;
+  top: 31% !important;
+  width: 430pt;
+  margin: auto;
 }
 
 .intro-self.sm {
   font-size: 7pt !important;
-  top: 43% !important;
-  left: 5%;  
+  top: 30% !important;
+  width: 200pt;
 }
 
 .bartitle {
@@ -130,14 +134,14 @@ export default{
 
 .face {
   position: absolute;
-  top: 35%;
-  left: 15%;
-  width: 20%;
+  top: -105pt;
+  left: 38%;
+  width: 100pt;
 }
 
 .face.sm {
-  top: 26%;
-  left: 40%;
-  width: 34%;
+  top: -100pt%;
+  left: 24%;
+  width: 100pt;
 }
 </style>

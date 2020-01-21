@@ -10,20 +10,22 @@
                   Contact
               </v-card-title>
               <div v-bind:class="[$vuetify.breakpoint.smAndDown === true ? 'bartitle contact sm' : 'bartitle contact']" />
-              <div class="text-center email mx-auto">
+              <div class="text-center align-center email mx-auto">
                 <div v-bind:class="[$vuetify.breakpoint.smAndDown === true ? 'email-detail sm' : 'email-detail']">
                     <em>j7w1felix-sts136[at]outlook.com</em><br>
                     （メールアドレスの[at]は＠記号に置き換えてください）<br><br>
                 </div>
-                <a href="https://qiita.com/keta-sts136">
-                    <img src="qiita-favicon.png" v-bind:class="[$vuetify.breakpoint.smAndDown === true ? 'qiita sm' : 'qiita']"/>
-                </a>
-                <a href="https://github.com/keita-f-sato">
-                    <v-icon large>fab fa-github-square</v-icon>
-                </a>
-                <a href="https://www.facebook.com/profile.php?id=100008217198305">
-                    <v-icon large>fab fa-facebook-square</v-icon>
-                </a>
+                <div class="icons">
+                    <a href="https://qiita.com/keta-sts136">
+                        <img src="qiita-favicon.png" v-bind:class="[$vuetify.breakpoint.smAndDown === true ? 'qiita sm' : 'qiita']"/>
+                    </a>
+                    <a href="https://github.com/keita-f-sato">
+                        <v-icon large>fab fa-github-square</v-icon>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100008217198305">
+                        <v-icon large>fab fa-facebook-square</v-icon>
+                    </a>
+                </div>
               </div>
             </v-card>
           </v-flex>
@@ -61,7 +63,9 @@ export default{
 }
 
 .contact-title.sm {
+  top: 37% !important;
   font-size: 45pt !important;
+  left: -6%;
 }
 
 .bartitle.contact {
@@ -71,37 +75,43 @@ export default{
 }
 
 .bartitle.contact.sm {
-  width: 80%;
+  width: 62%;
 }
 
 .email {
   color: #929292 !important;
   position: relative;
   top: 50%;
-  width: 310pt;
 }
 
 .email-detail {
+    position: relative;
     font-size: 12pt !important;
 }
 
 .email-detail.sm {
     font-size: 10pt !important;
-    margin: auto;
     width: 50%;
+    margin: auto;
+}
+
+.icons {
+    position: relative;
+    width: 280pt;
+    margin: auto;
 }
 
 .qiita {
     width: 24pt;
-    left: 102pt;
-    top: 56pt;
+    left: 87pt;
+    top: 1pt;
     position: absolute;
 }
 
 .qiita.sm {
     width: 24pt;
-    left: 42pt;
-    top: 58pt;
+    left: 28pt;
+    top: 1pt;
     margin-left: 60pt;
     position: absolute;
 }

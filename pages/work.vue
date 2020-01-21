@@ -204,7 +204,7 @@ export default{
   font-size: 11pt !important;
   line-height: 150%;
   top: 45% !important;
-  width: 100%;
+  width: 60%;
   left: 8%;   
 }
 
@@ -229,6 +229,9 @@ export default{
 
 .earo-bar {
   border-bottom: solid 1px ;
+  border-left: solid 0px ;
+  border-right: solid 0px ;
+  border-top: solid 0px ;
   border-image: url("/gradient.png") 1 stretch;
   border-image-slice: 1;
   top: 30%;
