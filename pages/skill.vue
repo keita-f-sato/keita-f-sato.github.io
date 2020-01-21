@@ -107,7 +107,8 @@ export default {
   color: #929292 !important;
   font-size: 30pt !important;
   top: 90%;
-  left:42%;
+  left:43%;
+  width: 120pt !important;
   border-bottom: solid 1px ;
   border-left: solid 0px ;
   border-right: solid 0px ;
@@ -119,7 +120,7 @@ export default {
 .tokui-title.sm {
   font-size: 19pt !important;
   left: 24%;
-  width: 40%;
+  width: 40% !important;
 }
 
 .base {

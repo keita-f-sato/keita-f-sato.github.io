@@ -85,8 +85,8 @@ export default{
   font-family: 'Tangerine', cursive !important;
   font-size: 60pt !important;
   top: 10% !important;
-  width: 55%;
-  left: 31%;
+  width: 150pt;
+  left: 40%;
   border-bottom: solid 1px ;
   border-left: solid 0px ;
   border-right: solid 0px ;
