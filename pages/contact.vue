@@ -105,4 +105,8 @@ export default{
     margin-left: 60pt;
     position: absolute;
 }
+
+.v-content {
+    padding: 0px 0px 0px 0px !important;
+}
 </style>
