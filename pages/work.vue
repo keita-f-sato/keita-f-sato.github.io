@@ -14,11 +14,11 @@
                   </v-card>
                   <v-card tile flat v-bind:class="[$vuetify.breakpoint.smAndDown === true ? 'aerospace-card sm' : 'aerospace-card']">
                       <v-card-title v-bind:class="[$vuetify.breakpoint.smAndDown === true ? 'aerospace-title sm' : 'aerospace-title']">
-                        帝京大学 理工学部 航空宇宙工学科 卒業
+                        帝京大学 理工学部航空宇宙工学科
                       </v-card-title>
                       <div class="earo-bar" />
                       <v-card-text v-bind:class="[$vuetify.breakpoint.smAndDown === true ? 'aerospace-day sm' : 'aerospace-day']">
-                        2016/03
+                        - 2016/03
                       </v-card-text>
                       <v-card-text v-bind:class="[$vuetify.breakpoint.smAndDown === true ? 'aerospace-detail sm' : 'aerospace-detail']">
                         研究テーマ：deep stall landingを行う小型無人航空機のHITLシミュレーションに関する研究<br>
@@ -178,7 +178,7 @@ export default{
   color: #929292 !important;
   font-family: 'Kosugi', sans-serif;
   font-size: 11pt !important;
-  top: 9% !important;
+  top: 6% !important;
   width: 35%;
   left: 70%;   
 }
