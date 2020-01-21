@@ -88,6 +88,9 @@ export default{
   width: 55%;
   left: 31%;
   border-bottom: solid 1px ;
+  border-left: solid 0px ;
+  border-right: solid 0px ;
+  border-top: solid 0px ;
   border-image: url("/gradient.png") 1 stretch;
   border-image-slice: 1;
 }
