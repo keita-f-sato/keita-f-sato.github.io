@@ -94,7 +94,7 @@ export default {
   color: #929292 !important;
   font-family: 'Tangerine', cursive !important;
   font-size: 60pt !important;
-  top: 25% !important;
+  top: 29% !important;
   width: 100%;
 }
 
@@ -139,18 +139,18 @@ export default {
 }
 
 .v-list-item.skill-itmes.sm {
-    width:90% !important;
+    width: 80% !important;
     left:2%;
 }
 
 .bartitle.skill {
-  top: 32% ;
+  top: 36% ;
   position: absolute;
   width: 62%;
 }
 
 .bartitle.skill.sm {
-  width: 80%;
+  width: 86%;
 }
 
 .earo-bar.skill {

@@ -17,12 +17,9 @@
     <v-container fluid pa-0 fill-height ma-0>
         <v-layout>
             <v-flex xs12 s12 md12 lg12 order-lg1 order-sm1>
-                <v-card tile flat class="who">
+                <v-card tile flat class="who" align-center >
                     <v-card-title v-bind:class="[$vuetify.breakpoint.xs === true ? 'justify-center about-title sm' : 'justify-center about-title']">
                         About
-                    <v-card-text v-bind:class="[$vuetify.breakpoint.xs === true ? 'intoroduction-title sm' : 'intoroduction-title']">
-                      自己紹介
-                    </v-card-text>
                     </v-card-title>
                     <img src="/face.png" alt="face picture" v-bind:class="[$vuetify.breakpoint.xs === true ? 'face sm' : 'face']">
                     <v-card-text v-bind:class="[$vuetify.breakpoint.xs === true ? 'intro-self sm' : 'intro-self']">
@@ -89,29 +86,16 @@ export default{
   font-size: 60pt !important;
   top: 10% !important;
   width: 55%;
-  left: 24%;
+  left: 31%;
+  border-bottom: solid 1px ;
+  border-image: url("/gradient.png") 1 stretch;
+  border-image-slice: 1;
 }
 
 .about-title.sm {
   font-size: 45pt !important;
 }
 
-.intoroduction-title {
-  position: absolute;
-  color: #929292 !important;
-  font-size: 15pt !important;
-  top: 70% !important;
-  width: 100%;
-  left: 43%;
-  border-bottom: solid 1px ;
-  border-image: url("/gradient.png") 1 stretch;
-  border-image-slice: 1;
-}
-
-.intoroduction-title.sm {
-  font-size: 13pt !important;
-  left: 37%;
-}
 
 .intro-self {
   font-family: 'Kosugi', sans-serif;
@@ -121,7 +105,7 @@ export default{
   font-size: 1.5vw !important;
   line-height: 150%;
   top: 32% !important;
-  width: 70%;
+  width: 80%;
   left: 35%;  
 }
 
@@ -149,8 +133,8 @@ export default{
 }
 
 .face.sm {
-  top: 27%;
-  left: 37%;
+  top: 26%;
+  left: 40%;
   width: 34%;
 }
 </style>

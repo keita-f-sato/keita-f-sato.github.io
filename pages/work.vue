@@ -139,7 +139,7 @@ export default{
 }
 
 .work-title.sm {
-  font-size: 30pt !important;
+  font-size: 45pt !important;
 }
 
 .bartitle.barwork {
@@ -149,7 +149,7 @@ export default{
 }
 
 .bartitle.barwork.sm {
-  top: 88%;
+  top: 90%;
   width: 75%;
 }
 
@@ -164,7 +164,7 @@ export default{
   font-family: 'Kosugi', sans-serif;
   font-size: 14pt !important;
   top: 3% !important;
-  width: 100%;
+  width: 90%;
   left: 7%;   
 }
 
@@ -178,21 +178,24 @@ export default{
   font-family: 'Kosugi', sans-serif;
   font-size: 11pt !important;
   top: 9% !important;
-  width: 43%;
+  width: 35%;
   left: 70%;   
 }
 
 .aerospace-day.sm {
   font-size: 7pt !important;
+  left: 64%;
+  width: 20%;
 }
 
 .aerospace-day.spiber {
   top: 5% !important;
+  width: 35%;
 }
 
 .aerospace-day.spiber.sm {
   font-size: 7pt !important;
-  left: 65%;
+  left: 50%;
 }
 
 .aerospace-detail {
@@ -209,7 +212,7 @@ export default{
   font-size: 7pt !important;
   left: 5%;   
   top: 28%!important;
-  width: 90%;
+  width: 77%;
   }
 
 .aerospace-detail.spiber {
@@ -221,7 +224,7 @@ export default{
   top: 25% !important;
   left: 5%;  
   line-height: 150%; 
-  width: 86%;
+  width: 77%;
 }
 
 .earo-bar {
@@ -242,7 +245,7 @@ export default{
 }
 
 .earo-bar.spiber.sm {
-  width: 105%;
+  width: 85%;
 }
 
 .spider-pic {
