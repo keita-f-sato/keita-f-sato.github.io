@@ -209,6 +209,7 @@ export default{
   font-size: 7pt !important;
   left: 5%;   
   top: 28%!important;
+  width: 90%;
   }
 
 .aerospace-detail.spiber {
@@ -220,6 +221,7 @@ export default{
   top: 25% !important;
   left: 5%;  
   line-height: 150%; 
+  width: 86%;
 }
 
 .earo-bar {

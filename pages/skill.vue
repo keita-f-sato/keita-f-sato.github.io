@@ -6,7 +6,7 @@
           <v-flex xs12 s12 md12 lg12 order-lg1 order-sm1>
             <v-card tile flat class="base">
               <v-card-title
-                v-bind:class="[$vuetify.breakpoint.smAndDown === true ? 'justify-center who-title sm' : 'justify-center who-title']">
+                v-bind:class="[$vuetify.breakpoint.smAndDown === true ? 'justify-center skill-main-title sm' : 'justify-center skill-main-title']">
                   SKILL
               </v-card-title>
               <div v-bind:class="[$vuetify.breakpoint.smAndDown === true ? 'bartitle skill sm' : 'bartitle skill']" />
@@ -83,22 +83,22 @@ export default {
 @import url('https://fonts.googleapis.com/css?family=Kosugi&display=swap');
 @import url('assets/move-bar.scss');
 
-.who {
+.skill-main {
   position: relative;
   background-color: #fff !important;
   height: 100%;
 }
 
-.who-title {
+.skill-main-title {
   position: absolute;
   color: #929292 !important;
   font-family: 'Tangerine', cursive !important;
   font-size: 60pt !important;
-  top: 35% !important;
+  top: 25% !important;
   width: 100%;
 }
 
-.who-title.sm {
+.skill-main-title.sm {
   font-size: 45pt !important;
 }
 
@@ -113,7 +113,8 @@ export default {
 
 .tokui-title.sm {
   font-size: 20pt !important;
-  left: 27%;
+  left: 24%;
+  width: 33%;
 }
 
 .base {
@@ -143,7 +144,7 @@ export default {
 }
 
 .bartitle.skill {
-  top: 43% ;
+  top: 32% ;
   position: absolute;
   width: 62%;
 }
