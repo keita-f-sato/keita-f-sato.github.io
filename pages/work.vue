@@ -13,7 +13,9 @@
                   <v-card tile flat class="work">
                   </v-card>
                   <v-card tile flat class="aerospace-card">
-                      <v-card-title v-bind:class="[$vuetify.breakpoint.smAndDown === true ? 'aerospace-title sm' : 'aerospace-title']">帝京大学 理工学部航空宇宙工学科</v-card-title>
+                      <v-card-title v-bind:class="[$vuetify.breakpoint.smAndDown === true ? 'aerospace-title sm' : 'aerospace-title']">
+                        帝京大学 理工学部航空宇宙工学科
+                      </v-card-title>
                       <div class="earo-bar" />
                       <v-card-text v-bind:class="[$vuetify.breakpoint.smAndDown === true ? 'aerospace-day sm' : 'aerospace-day']">
                         - 2016/03
@@ -148,7 +150,7 @@ export default{
 
 .bartitle.barwork.sm {
   top: 90%;
-  width: 75%;
+  width: 83%;
 }
 
 .aerospace-card {
