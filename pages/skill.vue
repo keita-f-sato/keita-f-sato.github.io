@@ -10,10 +10,9 @@
                   SKILL
               </v-card-title>
               <div v-bind:class="[$vuetify.breakpoint.smAndDown === true ? 'bartitle skill sm' : 'bartitle skill']" />
-              <v-card-title v-bind:class="[$vuetify.breakpoint.xs === true ? 'justify-center tokui-title sm' : 'justify-center tokui-title']">
+              <v-card-text v-bind:class="[$vuetify.breakpoint.xs === true ? 'justify-center tokui-title sm' : 'justify-center tokui-title']">
                 スキル
-                <div v-bind:class="[$vuetify.breakpoint.smAndDown === true ? 'earo-bar skill sm' : 'earo-bar skill']" />
-              </v-card-title>
+              </v-card-text>
             </v-card>
           </v-flex>
         </v-layout>
@@ -109,12 +108,18 @@ export default {
   font-size: 30pt !important;
   top: 90%;
   left:42%;
+  border-bottom: solid 1px ;
+  border-left: solid 0px ;
+  border-right: solid 0px ;
+  border-top: solid 0px ;
+  border-image: url("/gradient.png") 1 stretch;
+  border-image-slice: 1;
 }
 
 .tokui-title.sm {
-  font-size: 20pt !important;
+  font-size: 19pt !important;
   left: 24%;
-  width: 33%;
+  width: 40%;
 }
 
 .base {
