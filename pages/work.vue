@@ -169,7 +169,7 @@ export default{
 }
 
 .aerospace-title.sm {
-  font-size: 7pt !important;
+  font-size: 6pt !important;
   left: 0%;
 }
 
