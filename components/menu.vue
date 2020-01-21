@@ -35,7 +35,7 @@ export default{
         return {
             drawer: true,
             menues : [
-                { title: 'Top', link: '/', icon: 'fas fa-home'},
+                { title: 'Top', link: '/top', icon: 'fas fa-home'},
                 { title: 'About', link: '/about', icon: 'fas fa-user'},
                 { title: 'Work', link: '/work', icon: 'fas fa-wrench'},
                 { title: 'Skill', link: '/skill', icon: 'fas fa-code'},
