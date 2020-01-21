@@ -170,6 +170,7 @@ export default{
 
 .aerospace-title.sm {
   font-size: 7pt !important;
+  left: 0%;
 }
 
 .aerospace-day {
@@ -185,12 +186,12 @@ export default{
 .aerospace-day.sm {
   font-size: 7pt !important;
   left: 64%;
-  width: 20%;
+  width: 23%;
 }
 
 .aerospace-day.spiber {
   top: 5% !important;
-  width: 35%;
+  width: 40%;
 }
 
 .aerospace-day.spiber.sm {
@@ -245,7 +246,7 @@ export default{
 }
 
 .earo-bar.spiber.sm {
-  width: 85%;
+  width: 90%;
 }
 
 .spider-pic {

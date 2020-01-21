@@ -115,7 +115,7 @@ export default{
 .intro-self.sm {
   font-size: 7pt !important;
   top: 43% !important;
-  left: 10%;  
+  left: 5%;  
 }
 
 .bartitle {
