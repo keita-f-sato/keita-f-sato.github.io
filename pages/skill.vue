@@ -79,6 +79,8 @@ export default {
 
 
 <style>
+@import url('https://fonts.googleapis.com/css?family=Tangerine&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kosugi&display=swap');
 @import url('assets/move-bar.scss');
 
 .who {

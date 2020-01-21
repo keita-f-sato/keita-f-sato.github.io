@@ -136,18 +136,16 @@ export default{
   font-size: 60pt !important;
   top: 70% !important;
   width: 100%;
-  left: 7%;
 }
 
 .work-title.sm {
   font-size: 30pt !important;
-  left: 0%;
 }
 
 .bartitle.barwork {
   top: 90%;
   position: absolute;
-  width: 70%;
+  width: 65%;
 }
 
 .bartitle.barwork.sm {
@@ -194,6 +192,7 @@ export default{
 
 .aerospace-day.spiber.sm {
   font-size: 7pt !important;
+  left: 65%;
 }
 
 .aerospace-detail {
@@ -208,8 +207,9 @@ export default{
 
 .aerospace-detail.sm {
   font-size: 7pt !important;
-  left: 10%;   
-}
+  left: 5%;   
+  top: 28%!important;
+  }
 
 .aerospace-detail.spiber {
   top: 30% !important;
@@ -218,7 +218,7 @@ export default{
 .aerospace-detail.spiber.sm {
   font-size: 7pt !important;
   top: 25% !important;
-  left: 10%;  
+  left: 5%;  
   line-height: 150%; 
 }
 
@@ -228,7 +228,7 @@ export default{
   border-image-slice: 1;
   top: 30%;
   position: absolute;
-  width: 85%;
+  width: 90%;
 }
 
 .earo-bar.sm {
