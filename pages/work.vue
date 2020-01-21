@@ -14,7 +14,7 @@
                   </v-card>
                   <v-card tile flat class="aerospace-card">
                       <v-card-title v-bind:class="[$vuetify.breakpoint.smAndDown === true ? 'aerospace-title sm' : 'aerospace-title']">
-                        帝京大学 理工学部航空宇宙工学科
+                      帝京大学 理工学部航空宇宙工学科
                       </v-card-title>
                       <div class="earo-bar" />
                       <v-card-text v-bind:class="[$vuetify.breakpoint.smAndDown === true ? 'aerospace-day sm' : 'aerospace-day']">
