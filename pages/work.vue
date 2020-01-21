@@ -12,9 +12,9 @@
                   </v-card>
                   <v-card tile flat class="work">
                   </v-card>
-                  <v-card tile flat v-bind:class="[$vuetify.breakpoint.smAndDown === true ? 'aerospace-card sm' : 'aerospace-card']">
+                  <v-card tile flat class="aerospace-card">
                       <v-card-title v-bind:class="[$vuetify.breakpoint.smAndDown === true ? 'aerospace-title sm' : 'aerospace-title']">
-                        帝京大学 航空宇宙工学科
+                        帝京大学 理工学部航空宇宙工学科
                       </v-card-title>
                       <div class="earo-bar" />
                       <v-card-text v-bind:class="[$vuetify.breakpoint.smAndDown === true ? 'aerospace-day sm' : 'aerospace-day']">
@@ -204,6 +204,7 @@ export default{
   color: #929292 !important;
   font-family: 'Kosugi', sans-serif;
   font-size: 11pt !important;
+  line-height: 150%;
   top: 45% !important;
   width: 100%;
   left: 8%;   
