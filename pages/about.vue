@@ -114,6 +114,7 @@ export default{
   top: 31% !important;
   width: 430pt;
   margin: auto;
+  padding-bottom: 32pt;
 }
 
 .intro-self.sm {
