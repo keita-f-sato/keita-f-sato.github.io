@@ -118,7 +118,7 @@ export default{
 
 .intro-self.sm {
   font-size: 7pt !important;
-  top: 30% !important;
+  top: 35% !important;
   width: 200pt;
 }
 
@@ -140,7 +140,7 @@ export default{
 }
 
 .face.sm {
-  top: -100pt%;
+  top: -110pt;
   left: 24%;
   width: 100pt;
 }
