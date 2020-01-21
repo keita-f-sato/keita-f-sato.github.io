@@ -164,7 +164,7 @@ export default{
   font-family: 'Kosugi', sans-serif;
   font-size: 14pt !important;
   top: 3% !important;
-  width: 90%;
+  width: 100%;
   left: 7%;   
 }
 
@@ -186,7 +186,7 @@ export default{
 .aerospace-day.sm {
   font-size: 7pt !important;
   left: 64%;
-  width: 23%;
+  width: 35%;
 }
 
 .aerospace-day.spiber {
