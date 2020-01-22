@@ -43,6 +43,9 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    ['@nuxtjs/google-analytics', {
+      id: 'UA-156643948-1'
+    }]
   ],
   /*
   ** vuetify module configuration
