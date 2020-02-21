@@ -1,7 +1,7 @@
 <template>
     <transition name="fade">
-      <v-container v-if="dataLoadFinish === false " fluid pa-0 fill-height ma-0>
-        <v-layout　wrap>
+      <v-container v-if="dataLoadFinish === true " fluid pa-0 fill-height ma-0>
+        <v-layout>
           <v-flex xs12 sm12 md12 lg12>
             <v-card tile flat class="first-card">
               <v-card-title class="justify-center Welcome">

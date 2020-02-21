@@ -83,7 +83,7 @@ export default{
   position: absolute;
   color: #929292;
   font-family: 'Tangerine', cursive !important;
-  font-size: 60pt;
+  font-size: 60pt !important;
   top: 35% !important;
   width: 100%;
   margin:0 auto
@@ -138,7 +138,7 @@ export default{
 @media #{map-get($display-breakpoints, "xs-only")} {
   .who-title {
     position: relative;
-    font-size: 7vw;
+    font-size: 7vw !important;
     border-image: url(/gradient.png) 1 stretch;
     border-bottom: solid 1px;
     margin: auto;
@@ -176,7 +176,7 @@ export default{
 
   .who-title {
     position: relative;
-    font-size: 7vw;
+    font-size: 7vw !important;
     border-image: url(/gradient.png) 1 stretch;
     border-bottom: solid 1px;
     margin: auto;
@@ -226,7 +226,7 @@ export default{
 
 @media #{map-get($display-breakpoints, "lg-and-up")} {
   .who-title {
-    font-size: 70pt;
+    font-size: 70pt !important;
   }
 
   .bartitle {
