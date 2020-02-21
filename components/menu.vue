@@ -3,8 +3,8 @@
       app 
       right 
       permanent
-      overlay-opacity="0" 
-      :mini-variant="$vuetify.breakpoint.smAndDown"
+      overlay-opacity=1
+      mini-variant
       width=192 
       color=#fff
     >

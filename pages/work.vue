@@ -40,6 +40,21 @@
                   </v-card>
                   <v-card tile flat class="work detail">
                       <v-card-title v-bind:class="[$vuetify.breakpoint.smAndDown === true ? 'aerospace-title sm' : 'aerospace-title']">
+                        <a href="https://www.spiber.jp/">内浜化成株式会社（出向）</a>
+                      </v-card-title>
+                      <div v-bind:class="[$vuetify.breakpoint.smAndDown === true ? 'earo-bar spiber sm' : 'earo-bar spiber']" />
+                      <v-card-text v-bind:class="[$vuetify.breakpoint.smAndDown === true ? 'aerospace-day spiber sm' : 'aerospace-day spiber']">
+                        2016/10 - 2017/10
+                      </v-card-text>
+                      <v-card-text v-bind:class="[$vuetify.breakpoint.smAndDown === true ? 'aerospace-detail spiber sm' : 'aerospace-detail spiber']">
+                        複合材料の成形について学ぶために共同研究先の内浜化成に出向。<br>
+                        複合材料<br><br>
+                        キーワード：タンパク質工学・複合材料工学・流体解析・機械設計
+                      </v-card-text>
+                      <img v-if="$vuetify.breakpoint.mdAndUp" src="/spider.jpeg" alt="spider" v-bind:class="[$vuetify.breakpoint.xs === true ? 'spider-pic sm' : 'spider-pic']">
+                  </v-card>
+                  <v-card tile flat class="work detail">
+                      <v-card-title v-bind:class="[$vuetify.breakpoint.smAndDown === true ? 'aerospace-title sm' : 'aerospace-title']">
                         <a href="https://www.terra-drone.net/">TerraDrone株式会社</a>
                       </v-card-title>
                       <div v-bind:class="[$vuetify.breakpoint.smAndDown === true ? 'earo-bar spiber sm' : 'earo-bar spiber']" />
