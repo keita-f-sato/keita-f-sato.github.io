@@ -1,7 +1,8 @@
 <template>
   <v-content>
-      <Menu />
-      <v-container fluid pa-0 fill-height ma-0>
+    <Menu />
+    <Title title="SKILL" />
+      <!-- <v-container fluid pa-0 fill-height ma-0>
         <v-layout>
           <v-flex xs12 s12 md12 lg12 order-lg1 order-sm1>
             <v-card tile flat class="base">
@@ -16,7 +17,7 @@
             </v-card>
           </v-flex>
         </v-layout>
-      </v-container>
+      </v-container> -->
       <v-container fluid pa-0 fill-height ma-0>
           <v-layout>
             <v-flex xs12 s12 md12 lg12 order-lg1 order-sm1>
@@ -38,12 +39,16 @@
             </v-flex>
           </v-layout>
       </v-container>
+      <!-- <Star/> -->
   </v-content>
 </template>
 
 
 <script>
 import Menu from '~/components/menu.vue'
+import Title from '~/components/DetailTaitle.vue'
+import Star from '~/components/star.vue'
+
 
 export default {
   data () {
@@ -71,7 +76,9 @@ export default {
         }
   },
   components: {
-     Menu
+     Menu,
+     Title,
+     Star
   }
 }
 </script>

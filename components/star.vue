@@ -138,6 +138,7 @@ export default {
   height: 100%;
   width: 100%;
   z-index: 5;
+  top: 0px;
 }
 
 body {

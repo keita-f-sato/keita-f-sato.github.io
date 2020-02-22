@@ -1,7 +1,26 @@
 <template>
   <v-content>
       <Menu />
-      <v-container fluid pa-0 fill-height ma-0>
+      <Title title="Contact" />
+      <div class="text-center justify-center email">
+        <div v-bind:class="[$vuetify.breakpoint.smAndDown === true ? 'email-detail sm' : 'email-detail']">
+          <em>j7w1felix-sts136[at]outlook.com</em><br>
+          メールアドレスの[at]は＠記号に置き換えてください<br><br>
+        </div>
+        <div class="icons">
+          <a href="https://qiita.com/keta-sts136">
+            <img src="qiita-favicon.png" v-bind:class="[$vuetify.breakpoint.smAndDown === true ? 'qiita sm' : 'qiita']"/>
+          </a>
+          <a href="https://github.com/keita-f-sato">
+            <v-icon large>fab fa-github-square</v-icon>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=100008217198305">
+            <v-icon large>fab fa-facebook-square</v-icon>
+          </a>
+        </div>
+      </div>
+      <!-- <Star/> -->
+      <!-- <v-container fluid pa-0 fill-height ma-0>
         <v-layout>
           <v-flex xs12 s12 md12 lg12 order-lg1 order-sm1>
             <v-card tile flat height="100%">
@@ -30,16 +49,21 @@
             </v-card>
           </v-flex>
         </v-layout>
-      </v-container>
+      </v-container> -->
   </v-content>
 </template>
 
 <script>
 import Menu from '~/components/menu.vue'
+import Title from '~/components/DetailTaitle.vue'
+import Star from '~/components/star.vue'
+
 
 export default{
     components: {
-      Menu
+      Menu,
+      Title,
+      Star
     },
     data () {
         return {
@@ -68,20 +92,10 @@ export default{
   left: -6%;
 }
 
-.bartitle.contact {
-  top: 45% ;
-  position: absolute;
-  width: 62%;
-}
-
-.bartitle.contact.sm {
-  width: 62%;
-}
-
 .email {
   color: #929292 !important;
   position: relative;
-  top: 50%;
+  top: -50%;
 }
 
 .email-detail {

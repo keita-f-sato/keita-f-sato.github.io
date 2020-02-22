@@ -1,18 +1,19 @@
 <template>
   <v-content>
     <Menu />
-    <v-container fluid pa-0 fill-height ma-0>
-          <v-layout>
-              <v-flex xs12 s12 md12 lg12 order-lg1 order-sm1>
-                  <v-card tile flat class="who">
-                      <v-card-title class="justify-center who-title">
-                          Who I am?
-                      </v-card-title>
-                      <div class="bartitle" />
+    <Title title="Who I am?" />
+    <!-- <v-container fluid pa-0 fill-height ma-0>
+        <v-layout>
+            <v-flex xs12 s12 md12 lg12 order-lg1 order-sm1>
+                <v-card tile flat class="who">
+                    <v-card-title class="justify-center who-title">
+                        Who I am?
+                     </v-card-title>
+    　               <div class="bartitle" />
                   </v-card>
               </v-flex>
           </v-layout>
-    </v-container>
+    </v-container> -->
     <v-container fluid pa-0 fill-height ma-0>
         <v-layout>
             <v-flex xs12 s12 md12 lg12 order-lg1 order-sm1>
@@ -46,11 +47,13 @@
 <script>
 import Menu from '~/components/menu.vue'
 import Star from '~/components/star.vue'
+import Title from '~/components/DetailTaitle.vue'
 
 export default{
     components: {
       Menu,
-      Star
+      Star,
+      Title
     },
     data () {
         return {
@@ -129,10 +132,7 @@ export default{
   top: -207px;
   left: -205px;
   width: 30%;
-}
-
-.star1 {
-  top: 0px;
+  z-index: 50;
 }
 
 @media #{map-get($display-breakpoints, "xs-only")} {
@@ -221,6 +221,10 @@ export default{
 
   .bartitle {
     width: 63%;
+  }
+
+  .face {
+    top: -255px;
   }
 }
 

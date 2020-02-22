@@ -1,6 +1,6 @@
 <template>
     <transition name="fade">
-      <v-container v-if="dataLoadFinish === true " fluid pa-0 fill-height ma-0>
+      <v-container v-if="dataLoadFinish === false " fluid pa-0 fill-height ma-0>
         <v-layout>
           <v-flex xs12 sm12 md12 lg12>
             <v-card tile flat class="first-card">
@@ -47,7 +47,7 @@ export default {
   top: 45%;
   left: 13%;
   font-size: 50pt;
-  font-weight: 100;
+  font-weight: 100 !important;
 }
 
 .first-bar {
@@ -71,7 +71,7 @@ export default {
 
   .Welcome {
     left: 0%;
-    font-size: 20pt;
+    font-size: 20pt !important;
     width: 100%;
   }
 }
@@ -85,7 +85,7 @@ export default {
 
   .Welcome {
     left: 0%;
-    font-size: 60pt;
+    font-size: 60pt !important;
     width: 100%;
   }
 }
@@ -99,7 +99,7 @@ export default {
 
   .Welcome {
     left: 0%;
-    font-size: 35pt;
+    font-size: 35pt !important;
     width: 100%;
   }
 }
