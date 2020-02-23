@@ -19,7 +19,7 @@
           </a>
         </div>
       </div>
-      <!-- <Star/> -->
+      <Star/>
   </v-content>
 </template>
 

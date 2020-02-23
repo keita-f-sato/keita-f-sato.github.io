@@ -9,7 +9,8 @@
       color=#fff
     >
         <v-list rounded class="menulist">
-            <v-list-item v-for="menu in menues" :key="menu.title" :to="menu.link" link>
+            <!-- アニメーション読み込みのためにhrefを使用 -->
+            <v-list-item v-for="menu in menues" :key="menu.title" :href="menu.link" link>
                 <v-list-item-icon>
                   <v-icon>{{ menu.icon }}</v-icon>
                 </v-list-item-icon>

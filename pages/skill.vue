@@ -49,7 +49,7 @@
             </v-flex>
           </v-layout>
       </v-container>
-      <!-- <Star/> -->
+      <Star/>
   </v-content>
 </template>
 

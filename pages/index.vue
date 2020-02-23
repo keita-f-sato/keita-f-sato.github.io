@@ -4,7 +4,7 @@
     <v-container v-if="dataLoadFinish === true" fluid pa-0 fill-height ma-0>
       <v-layout　wrap>
         <v-flex xs12 sm12 md3 lg3 order-lg1 order-sm1 class="About">
-            <v-card tile flat class="card" href="/about">
+            <v-card tile flat elevation=0 class="card" href="/about">
                 <v-card-title class="justify-center Cardtitle">
                   About
                   <div class="bar" />
@@ -15,7 +15,7 @@
             </v-card>
         </v-flex>
         <v-flex xs12 sm12 md3 lg3 order-lg2 order-sm2 class="Work">
-            <v-card tile flat class="card" href="/work">
+            <v-card tile flat elevation=0 class="card" href="/work">
               <v-card-title class="justify-center Cardtitle">
                 Work
                 <div class="bar" />
@@ -26,7 +26,7 @@
             </v-card>
         </v-flex>
         <v-flex xs12 sm12 md3 lg3 order-lg3 order-sm3 class="Skill">
-            <v-card tile flat class="card" href="/skill">
+            <v-card tile flat elevation=0 class="card" href="/skill">
                 <v-card-title class="justify-center Cardtitle">
                     Skill
                     <div class="bar" />
@@ -37,7 +37,7 @@
             </v-card>
         </v-flex> 
         <v-flex xs12 sm12 md3 lg3 order-lg4 order-sm4 class="Contact">
-            <v-card tile flat class="card" href="/contact">
+            <v-card tile flat elevation=0 class="card" href="/contact">
               <v-card-title height="30%" class="justify-center Cardtitle">
                   Contact
                   <div class="bar" />
