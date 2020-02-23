@@ -2,39 +2,49 @@
   <v-content>
     <Menu />
     <Title title="SKILL" />
-      <!-- <v-container fluid pa-0 fill-height ma-0>
-        <v-layout>
-          <v-flex xs12 s12 md12 lg12 order-lg1 order-sm1>
-            <v-card tile flat class="base">
-              <v-card-title
-                v-bind:class="[$vuetify.breakpoint.smAndDown === true ? 'justify-center skill-main-title sm' : 'justify-center skill-main-title']">
-                  SKILL
-              </v-card-title>
-              <div v-bind:class="[$vuetify.breakpoint.smAndDown === true ? 'bartitle skill sm' : 'bartitle skill']" />
-              <v-card-text v-bind:class="[$vuetify.breakpoint.xs === true ? 'justify-center tokui-title sm' : 'justify-center tokui-title']">
-                スキル
-              </v-card-text>
-            </v-card>
-          </v-flex>
-        </v-layout>
-      </v-container> -->
       <v-container fluid pa-0 fill-height ma-0>
           <v-layout>
-            <v-flex xs12 s12 md12 lg12 order-lg1 order-sm1>
+            <v-flex v-if="$vuetify.breakpoint.mdAndUp" xs12 s12 md2 lg4 order-lg1 order-sm1>
+              <v-card class="side-card" elevation=0>
+                <div class="pics right">
+                  <img src="python-logo-symbol-5.png" alt="python" class="logs"/>
+                  <img src="docker-vector-logo-small.png" alt="docker" class="logs"/>
+                  <img src="PX4-Logo-Black.png" alt="PX4" class="logs"/>
+                  <img src="azure.png" alt="azure" class="logs"/>
+                </div>
+              </v-card>
+            </v-flex>
+            <v-flex xs12 s12 md8 lg4 order-lg2 order-sm1>
               <v-card tile flat class="skills">
-                <v-list-item v-for="skill_item in skills" :key="skill_item.skill" v-bind:class="[$vuetify.breakpoint.smAndDown === true ? 'v-list-item skill-itmes sm' : 'v-list-item skill-itmes']">
-                  <v-list-item-content>
-                    <v-list-item-title v-bind:class="[$vuetify.breakpoint.smAndDown === true ? 'skill-title sm' : 'skill-title']">{{ skill_item.skill }}</v-list-item-title>
-                  </v-list-item-content>
-                  <v-rating
-                    :value=skill_item.rate
-                    color="amber"
-                    dense
-                    half-increments
-                    readonly
-                    :size="[$vuetify.breakpoint.smAndDown === true ? '10' : '14']"
-                  ></v-rating>
-                </v-list-item>
+                <div v-for="value in skills" :key="value.name" class="skill-box"> 
+                  <h4>{{ value.name }} </h4>
+                  <v-list-item v-for="skill_item in value.item" :key="skill_item.skill" class="skill-itmes">
+                    <v-list-item-content>
+                      <v-list-item-title class="skill-title">{{ skill_item.skill }} </v-list-item-title>
+                    </v-list-item-content>
+                    <p>{{ skill_item.rate }}</p>
+                    <v-rating
+                      :value=skill_item.rate
+                      color="amber"
+                      dense
+                      half-increments
+                      readonly
+                      :size="[$vuetify.breakpoint.smAndDown === true ? '10' : '14']"
+                    ></v-rating>
+                  </v-list-item>
+                </div>
+              </v-card>
+            </v-flex>
+            <v-flex v-if="$vuetify.breakpoint.mdAndUp" xs12 s12 md2 lg4 order-lg3 order-sm1>
+              <v-card class="side-card" elevation=0>
+                <div class="pics left">
+                  <img src="pytorch-logo-dark.png" alt="pytorch" class="logs"/>
+                  <img src="tensorflow.png" alt="tensorflow" class="logs"/>
+                  <img src="julia.png" alt="julia" class="logs"/>
+                  <img src="rust.png" alt="julia" class="logs"/>
+                  <img src="openfoam-logo-large.png" alt="openfoam" class="logs"/>
+                  <img src="nuxt2.png" alt="nuxt" class="logs"/>
+                </div>
               </v-card>
             </v-flex>
           </v-layout>
@@ -54,25 +64,49 @@ export default {
   data () {
         return {
             skills : [
-                { skill: 'python', rate: '5'},
-                { skill: 'Fusion360', rate: '4.5'},
-                { skill: '複合材料工学', rate: '4.5'},
-                { skill: '機械設計', rate: '4.5'},
-                { skill: 'Pytorch', rate: '4'},
-                { skill: 'Julia', rate: '4'},
-                { skill: 'PX4/Arudpilot', rate: '4'},
-                { skill: '制御工学', rate: '4'},
-                { skill: 'vue.js/nuxt.js', rate: '3.5'},
-                { skill: 'HTML/CSS/Javascript', rate: '3.5'},
-                { skill: 'AWS', rate: '3.5'},
-                { skill: 'Wordpress', rate: '3.5'},
-                { skill: 'C++', rate: '3'},
-                { skill: 'タンパク質工学', rate: '3'},
-                { skill: 'OpenFOAM', rate: '2.5'},
-                { skill: 'Rust', rate: '2'},
-                { skill: 'Azure', rate: '2'},
-                { skill: 'GO', rate: '1'},
-            ],
+              {
+                name: "言語",
+                item: [
+                  { skill: 'python', rate: '5'},
+                  { skill: 'Julia', rate: '4'},
+                  { skill: 'HTML/CSS/Javascript', rate: '3.5'},
+                  { skill: 'C++', rate: '3'},
+                  { skill: 'Rust', rate: '2'},
+                  { skill: 'GO', rate: '1'},
+                ]
+              },
+              {
+                name: "ツール",
+                item: [
+                  { skill: 'Fusion360', rate: '4.5'},
+                  { skill: 'Pytorch', rate: '4'},
+                  { skill: 'PX4/Arudpilot', rate: '4'},
+                  { skill: 'vue.js/nuxt.js', rate: '4'},
+                  { skill: 'Docker', rate: '4'},
+                  { skill: 'Keras/Tensorflow', rate: '4'},
+                  { skill: 'DB(MySQL/Elasticsearch)', rate: '3.5'},
+                  { skill: 'Wordpress', rate: '3'},
+                  { skill: 'OpenFOAM', rate: '2.5'},
+                ]
+              },
+              {
+                name: "専門分野",
+                item: [
+                  { skill: '複合材料工学', rate: '4.5'},
+                  { skill: '機械設計', rate: '4.5'},
+                  { skill: '制御工学', rate: '4'},
+                  { skill: 'タンパク質工学', rate: '3'},
+                ]
+              },
+              {
+                name: "その他",
+                item: [
+                  { skill: 'バレーボール', rate: '3.5'},
+                  { skill: 'AWS', rate: '3.5'},
+                  { skill: 'Azure', rate: '2'},
+                ]
+              },
+            ]
         }
   },
   components: {
@@ -84,50 +118,20 @@ export default {
 </script>
 
 
-<style>
+<style lang="scss">
 @import url('https://fonts.googleapis.com/css?family=Tangerine&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Kosugi&display=swap');
 @import url('assets/move-bar.scss');
+@import 'node_modules/vuetify/src/styles/settings/_variables.scss';
 
-.skill-main {
-  position: relative;
-  background-color: #fff !important;
+
+.side-card {
   height: 100%;
 }
 
-.skill-main-title {
-  position: absolute;
+.skill-title {
   color: #929292 !important;
-  font-family: 'Tangerine', cursive !important;
-  font-size: 60pt !important;
-  top: 29% !important;
-  width: 100%;
-}
-
-.skill-main-title.sm {
-  font-size: 45pt !important;
-}
-
-.tokui-title {
-  font-family: 'Kosugi', sans-serif;
-  position: absolute;
-  color: #929292 !important;
-  font-size: 30pt !important;
-  top: 90%;
-  left:43%;
-  width: 120pt !important;
-  border-bottom: solid 1px ;
-  border-left: solid 0px ;
-  border-right: solid 0px ;
-  border-top: solid 0px ;
-  border-image: url("/gradient.png") 1 stretch;
-  border-image-slice: 1;
-}
-
-.tokui-title.sm {
-  font-size: 19pt !important;
-  left: 24%;
-  width: 40% !important;
+  float: left;
 }
 
 .base {
@@ -136,46 +140,58 @@ export default {
 
 .skills {
     height: 100%;
+    h4 {
+      color: #929292 !important;
+      font-weight: 100;
+      padding-top: 10px;
+    }
 }
 
-.skill-title {
-    color: #929292 !important;
+.skill-itmes {
+  width: 380px;
+  min-height: 30px;
 }
 
-.skill-title.sm {
-    font-size: 10pt !important;
+.v-list-item__content {
+  padding: 6px 0;
 }
 
-.v-list-item.skill-itmes {
-    width:50% !important;
-    left:27%;
+.skill-box {
+  width: 350px;
+  margin: auto;
 }
 
-.v-list-item.skill-itmes.sm {
-    width: 80% !important;
-    left:2%;
+.skill-itmes p {
+  color: #929292;
+  float: left;
+  margin: 0;
+} 
+
+.pics {
+  padding-top: 200px;
 }
 
-.bartitle.skill {
-  top: 36% ;
-  position: absolute;
-  width: 62%;
+.logs {
+  width: 100px;
+  margin: 20px auto;
+  display: block;
 }
 
-.bartitle.skill.sm {
-  width: 86%;
+.right {
+  padding-left: 0px;
+}
+.left {
+  padding-right: 0px;
 }
 
-.earo-bar.skill {
-  border-bottom: solid 1px ;
-  border-image: url("/gradient.png") 1 stretch;
-  border-image-slice: 1;
-  top: 100%;
-  position: absolute;
-  width: 90pt;
-}
+@media #{map-get($display-breakpoints, "md-only")} {
+  .right {
+    padding-left: 50px;
+  }
 
-.earo-bar.skill.sm {
-  width: 105%;
+  .left {
+    padding-right: 50px;
+  }
+
 }
 </style>
