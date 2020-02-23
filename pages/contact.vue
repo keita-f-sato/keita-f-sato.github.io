@@ -9,7 +9,7 @@
         </div>
         <div class="icons">
           <a href="https://qiita.com/keta-sts136">
-            <img src="qiita-favicon.png" v-bind:class="[$vuetify.breakpoint.smAndDown === true ? 'qiita sm' : 'qiita']"/>
+            <img src="/qiita-favicon.png" v-bind:class="[$vuetify.breakpoint.smAndDown === true ? 'qiita sm' : 'qiita']"/>
           </a>
           <a href="https://github.com/keita-f-sato">
             <v-icon large>fab fa-github-square</v-icon>

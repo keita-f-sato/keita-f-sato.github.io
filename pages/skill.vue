@@ -7,10 +7,10 @@
             <v-flex v-if="$vuetify.breakpoint.mdAndUp" xs12 s12 md2 lg4 order-lg1 order-sm1>
               <v-card class="side-card" elevation=0>
                 <div class="pics right">
-                  <img src="python-logo-symbol-5.png" alt="python" class="logs"/>
-                  <img src="docker-vector-logo-small.png" alt="docker" class="logs"/>
-                  <img src="PX4-Logo-Black.png" alt="PX4" class="logs"/>
-                  <img src="azure.png" alt="azure" class="logs"/>
+                  <img src="/python-logo-symbol-5.png" alt="python" class="logs"/>
+                  <img src="/docker-vector-logo-small.png" alt="docker" class="logs"/>
+                  <img src="/PX4-Logo-Black.png" alt="PX4" class="logs"/>
+                  <img src="/azure.png" alt="azure" class="logs"/>
                 </div>
               </v-card>
             </v-flex>
@@ -38,12 +38,12 @@
             <v-flex v-if="$vuetify.breakpoint.mdAndUp" xs12 s12 md2 lg4 order-lg3 order-sm1>
               <v-card class="side-card" elevation=0>
                 <div class="pics left">
-                  <img src="pytorch-logo-dark.png" alt="pytorch" class="logs"/>
-                  <img src="tensorflow.png" alt="tensorflow" class="logs"/>
-                  <img src="julia.png" alt="julia" class="logs"/>
-                  <img src="rust.png" alt="julia" class="logs"/>
-                  <img src="openfoam-logo-large.png" alt="openfoam" class="logs"/>
-                  <img src="nuxt2.png" alt="nuxt" class="logs"/>
+                  <img src="/pytorch-logo-dark.png" alt="pytorch" class="logs"/>
+                  <img src="/tensorflow.png" alt="tensorflow" class="logs"/>
+                  <img src="/julia.png" alt="julia" class="logs"/>
+                  <img src="/rust.png" alt="julia" class="logs"/>
+                  <img src="/openfoam-logo-large.png" alt="openfoam" class="logs"/>
+                  <img src="/nuxt2.png" alt="nuxt" class="logs"/>
                 </div>
               </v-card>
             </v-flex>
