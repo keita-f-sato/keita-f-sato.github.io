@@ -9,10 +9,9 @@
         </v-flex>
       </v-layout>
     </v-container>
-    <!-- <Star/> -->
+    <Star/>
   </v-content>
 </template>
-
 
 <script>
 import Menu from '~/components/menu.vue'
@@ -31,7 +30,7 @@ export default{
         return {
             details: [
               { 
-                title: '帝京大学 理工学部航空宇宙工学科', 
+                title: '帝京大学 理工学部 航空宇宙工学科', 
                 year: '- 2016/03', 
                 texts:[
                   '研究テーマ：deep stall landingを行う小型無人航空機のHITLシミュレーションに関する研究', 
