@@ -66,6 +66,7 @@ export default{
   color: #929292 !important;
   position: relative;
   top: -50%;
+  z-index: 50;
 }
 
 .email-detail {
