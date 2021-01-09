@@ -1,0 +1,43 @@
+/*!
+  * vue-router v3.4.9
+  * (c) 2020 Evan You
+  * @license MIT
+  */
+
+/*!
+ * Vue.js v2.6.12
+ * (c) 2014-2020 Evan You
+ * Released under the MIT License.
+ */
+
+/*!
+ * vue-client-only v2.0.0
+ * (c) 2019-present egoist <0x142857@gmail.com>
+ * Released under the MIT License.
+ */
+
+/*!
+ * vue-no-ssr v1.1.1
+ * (c) 2018-present egoist <0x142857@gmail.com>
+ * Released under the MIT License.
+ */
+
+/**
+	 * @file prescribe
+	 * @description Tiny, forgiving HTML parser
+	 * @version vundefined
+	 * @see {@link https://github.com/krux/prescribe/}
+	 * @license MIT
+	 * @author Derek Brans
+	 * @copyright 2016 Krux Digital, Inc
+	 */
+
+/**
+ * @file postscribe
+ * @description Asynchronously write javascript, even with document.write.
+ * @version v2.0.8
+ * @see {@link https://krux.github.io/postscribe}
+ * @license MIT
+ * @author Derek Brans
+ * @copyright 2016 Krux Digital, Inc
+ */
